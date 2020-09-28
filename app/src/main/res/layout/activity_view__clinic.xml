@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PatientFeatures.ViewClinicDialog">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Clinic's Information"
+            android:textSize="24sp"
+            android:textStyle="bold|italic" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="30dp" />
+
+            <Button
+                android:id="@+id/btn_patient_view_service_appointment"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_button"
+                android:text="Make an Appointment"
+                android:textAllCaps="false"
+                android:textColor="@color/Pure_White" />
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="30dp" />
+
+            <Button
+                android:id="@+id/Rating"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_button"
+                android:text="Leave a Rating"
+                android:textAllCaps="false"
+                android:textColor="@color/Pure_White" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Clinic Name:"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textClinicName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="placeholder" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:id="@+id/showHours"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hours:"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtHours"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:id="@+id/spinner4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Services Provided:"
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/servicesClinic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

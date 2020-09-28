@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmployeeFeatures.CompleteProfile">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textComplete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/complete_your_profile"
+                android:textSize="20sp"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:id="@+id/textAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/street_address" />
+
+            <EditText
+                android:id="@+id/editAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/_123_example_st"
+                android:inputType="textPersonName"
+                android:importantForAutofill="no" />
+
+            <TextView
+                android:id="@+id/textOptional"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/apartment_suite_unit_etc_optional" />
+
+            <EditText
+                android:id="@+id/editOptional"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:importantForAutofill="no"
+                android:labelFor="@id/editOptional"/>
+
+            <TextView
+                android:id="@+id/textProvince"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/province" />
+
+            <EditText
+                android:id="@+id/editProvince"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/ontario"
+                android:inputType="textPersonName"
+                android:importantForAutofill="no" />
+
+            <TextView
+                android:id="@+id/textCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/town_city" />
+
+            <EditText
+                android:id="@+id/editCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/ottawa"
+                android:inputType="textPersonName"
+                android:importantForAutofill="no" />
+
+            <TextView
+                android:id="@+id/textPostal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/postal_code" />
+
+            <EditText
+                android:id="@+id/editPostal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/k1n_6n5"
+                android:inputType="textPostalAddress"
+                android:importantForAutofill="no" />
+
+            <TextView
+                android:id="@+id/textPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/phone_number" />
+
+            <EditText
+                android:id="@+id/editPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/_1234567890"
+                android:inputType="phone"
+                android:importantForAutofill="no" />
+
+            <TextView
+                android:id="@+id/textClinic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/name_of_clinic" />
+
+            <EditText
+                android:id="@+id/editClinic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:importantForAutofill="no"
+                android:labelFor="@id/editClinic"/>
+
+            <TextView
+                android:id="@+id/textInsurance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/insurance" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textPayment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/payment_method" />
+
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown" />
+
+            <Button
+                android:id="@+id/btnComplete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/complete_profile"
+                android:background="@drawable/custom_button"
+                android:textColor="@color/Pure_White"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

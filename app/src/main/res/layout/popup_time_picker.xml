@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+
+    android:id="@+id/popup_1"
+    android:layout_width="fill_parent"
+    android:background="@color/My_gray"
+    android:layout_height="fill_parent">
+
+
+    <TimePicker
+        android:id="@+id/popup1_time_picker"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="189dp"
+        android:layout_gravity="center"
+        android:timePickerMode="spinner">
+
+    </TimePicker>
+
+    <Space
+        android:id="@+id/space_popup1_2"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <Button
+        android:id="@+id/btn_popup1_add"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignBottom="@id/space_popup1_2"
+
+        android:layout_alignParentRight="true"
+
+        android:layout_marginRight="70dp"
+        android:layout_marginBottom="-470dp"
+        android:background="@drawable/custom_button"
+        android:text="@string/Add"
+        android:textAllCaps="false"
+        android:textColor="@color/Pure_White" />
+
+    <Button
+        android:id="@+id/btn_popup1_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/space_popup1_2"
+        android:layout_marginLeft="70dp"
+        android:layout_marginBottom="-470dp"
+        android:background="@drawable/custom_button"
+        android:text="@string/Cancel"
+        android:textAllCaps="false"
+        android:textColor="@color/Pure_White"></Button>
+
+
+</RelativeLayout>

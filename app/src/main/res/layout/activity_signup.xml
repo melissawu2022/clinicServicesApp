@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    tools:context=".SignupActivity">
+
+
+    <TextView
+        android:id="@+id/LinkLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Already have an account? Login"
+        android:textSize="18dp"
+        android:onClick="navigateBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLayout" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        android:text="Create as an employee account"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ConfirmPasswordLayout" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/firstnameLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/BigSign"
+        android:layout_width="219dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="32dp"
+        android:gravity="center"
+        android:text="Signup Activity"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/firstnameLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <LinearLayout
+        android:id="@+id/lastnameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/usernameLayout"
+        tools:layout_editor_absoluteX="4dp">
+
+        <EditText
+            android:id="@+id/lastname"
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:hint="Last name"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/firstnameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/lastnameLayout"
+        tools:layout_editor_absoluteX="0dp">
+
+        <EditText
+            android:id="@+id/firstname"
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:hint="First name"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/usernameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/passwordLayout"
+        tools:layout_editor_absoluteX="5dp">
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:hint="Username"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/passwordLayout"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/ConfirmPasswordLayout"
+        tools:layout_editor_absoluteX="5dp">
+
+        <EditText
+            android:id="@+id/passwordField"
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="415dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="56dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/Signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button"
+            android:clickable="true"
+            android:onClick="login"
+            android:text="Sign Up"
+            android:textAllCaps="false"
+            android:textColor="@color/Pure_White" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1" />
+
+        <Button
+            android:id="@+id/Cancel"
+            android:background="@drawable/custom_button"
+            android:textColor="@color/Pure_White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:layout_marginRight="35dp"
+            android:layout_weight="1"
+            android:text="Cancel" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ConfirmPasswordLayout"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_marginBottom="176dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:id="@+id/confirmPassword"
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:hint="Confirm Password"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

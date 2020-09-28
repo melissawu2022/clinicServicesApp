@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminFeatures.Admin">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/roleService"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Role of person performing service"
+                android:inputType="textPersonName" />
+
+            <Space
+                android:layout_width="fill_parent"
+                android:layout_height="10dp" />
+
+            <EditText
+                android:id="@+id/serviceName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Service name"
+                android:inputType="textPersonName" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <EditText
+                android:id="@+id/serviceRate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Service Rate"
+                android:inputType="phone" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <Button
+                android:id="@+id/serviceAdd"
+                android:background="@drawable/custom_button"
+                android:textColor="@color/Pure_White"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Service" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+
+            <Button
+                android:id ="@+id/back"
+                android:background="@drawable/custom_button"
+                android:textColor="@color/Pure_White"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Back"
+            />
+
+            <TextView
+                android:id="@+id/textAccounts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Services " />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <ListView
+                android:id="@+id/serviceList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

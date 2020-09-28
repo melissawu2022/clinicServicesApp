@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/AppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Login"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/usernameField"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="40dp"
+        android:hint="Username"
+        android:textSize="20sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AppName" />
+
+    <EditText
+        android:id="@+id/passwordField"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usernameField" />
+
+    <LinearLayout
+        android:id="@+id/loginlayout"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordField">
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="100dp"
+            android:textAllCaps="false"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/custom_button"
+            android:textColor="@color/Pure_White"
+            android:onClick="openWelcomePage"
+            android:text="Login" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/signuplayout"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/loginlayout"
+        tools:layout_editor_absoluteX="-6dp">
+
+        <TextView
+            android:id="@+id/linkSignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account? Sign up"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="311dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:color/background_dark"
+        tools:srcCompat="@drawable/logo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

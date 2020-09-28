@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="Japanese_Laurel">#027412</color>
+    <color name="Pure_White">#FFFFFF</color>
+    <color name="True_Black">#000000</color>
+    <color name = "Persian_Red">#D8121D</color>
+    <color name="My_orange">#E93519</color>
+    <color name="My_green">#34B821</color>
+    <color name="My_gray">#EBEBEB</color>
+
+</resources>

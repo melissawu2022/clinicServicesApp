@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".EmployeeFeatures.WorkingHour">
+
+    <View
+
+        android:id="@+id/space0"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"></View>
+
+    <Button
+        android:id="@+id/btn_add"
+        android:background="@drawable/custom_button"
+        android:textColor="@color/Pure_White"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="@string/plus_sign" />
+
+    <LinearLayout
+        android:id="@+id/row1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <View
+            android:id="@+id/space11"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"></View>>
+
+        <TextView
+            android:id="@+id/txt_monday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/monday"
+            android:textColor="@color/True_Black" />
+
+        <EditText
+            android:id="@+id/from_time1"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/from"
+            android:inputType="time" />
+
+        <EditText
+            android:id="@+id/to_time1"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/to"
+            android:inputType="time" />
+
+        <Button
+            android:id="@+id/delete1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/round_btn2"
+            android:text="@string/minus_sign"
+            android:textColor="@color/Pure_White"
+            android:visibility="visible" />
+
+        <View
+            android:id="@+id/space1"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"></View>>
+
+        <Button
+            android:id="@+id/add1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/round_btn"
+            android:text="@string/plus_sign"
+            android:textColor="@color/Pure_White"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/space12"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"></View>>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/row2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <View
+            android:id="@+id/space18"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"></View>>
+
+        <TextView
+            android:id="@+id/txt_tuesday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tuesday"
+            android:textColor="@color/True_Black" />
+
+        <EditText
+            android:id="@+id/from_time2"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/from"
+            android:inputType="time" />
+
+        <EditText
+            android:id="@+id/to_time2"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/to"
+            android:inputType="time" />
+
+        <Button
+            android:id="@+id/delete2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/round_btn2"
+            android:text="@string/minus_sign"
+            android:textColor="@color/Pure_White" />
+
+        <View
+            android:id="@+id/space2"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"></View>
+
+        <Button
+            android:id="@+id/add2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/round_btn"
+            android:text="@string/plus_sign"
+            android:textColor="@color/Pure_White"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/space19"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"></View>>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/row3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <View
+            android:id="@+id/space17"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"></View>>
+
+        <TextView
+            android:id="@+id/txt_wednesday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wednesday"
+            android:textColor="@color/True_Black" />
+
+        <EditText
+            android:id="@+id/from_time3"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/from"
+            android:inputType="time" />
+
+        <EditText
+            android:id="@+id/to_time3"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/to"
+            android:inputType="time" />
+
+        <Button
+            android:id="@+id/delete3"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/round_btn2"
+            android:text="@string/minus_sign"
+            android:textColor="@color/Pure_White" />
+
+        <View
+            android:id="@+id/space3"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"></View>
+
+        <Button
+            android:id="@+id/add3"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/round_btn"
+            android:text="@string/plus_sign"
+            android:textColor="@color/Pure_White"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/space20"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"></View>>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/row4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <View
+            android:id="@+id/space16"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"></View>>
+
+        <TextView
+            android:id="@+id/txt_thursdays"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/thursday"
+            android:textColor="@color/True_Black" />
+
+        <EditText
+            android:id="@+id/from_time4"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/from"
+            android:inputType="time" />
+
+        <EditText
+            android:id="@+id/to_time4"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/to"
+            android:inputType="time" />
+
+        <Button
+            android:id="@+id/delete4"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/round_btn2"
+            android:text="@string/minus_sign"
+            android:textColor="@color/Pure_White" />
+
+        <View
+            android:id="@+id/space4"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"></View>>
+
+        <Button
+            android:id="@+id/add4"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/round_btn"
+            android:text="@string/plus_sign"
+            android:textColor="@color/Pure_White"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/space21"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"></View>>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/row5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <View
+            android:id="@+id/space15"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"></View>>
+
+        <TextView
+            android:id="@+id/txt_friday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/friday"
+            android:textColor="@color/True_Black" />
+
+        <EditText
+            android:id="@+id/from_time5"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/from"
+            android:inputType="time" />
+
+        <EditText
+            android:id="@+id/to_time5"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/to"
+            android:inputType="time" />
+
+        <Button
+            android:id="@+id/delete5"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/round_btn2"
+            android:text="@string/minus_sign"
+            android:textColor="@color/Pure_White" />
+
+        <View
+            android:id="@+id/space5"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"></View>>
+
+        <Button
+            android:id="@+id/add5"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/round_btn"
+            android:text="@string/plus_sign"
+            android:textColor="@color/Pure_White"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/space22"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"></View>>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/row6"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        tools:visibility="gone">
+
+        <View
+            android:id="@+id/space14"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"></View>>
+
+        <TextView
+            android:id="@+id/txt_saturday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/saturday"
+            android:textColor="@color/True_Black" />
+
+        <EditText
+            android:id="@+id/from_time6"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/from"
+            android:inputType="time" />
+
+        <EditText
+            android:id="@+id/to_time6"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/to"
+            android:inputType="time" />
+
+        <Button
+            android:id="@+id/delete6"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/round_btn2"
+            android:text="@string/minus_sign"
+            android:textColor="@color/Pure_White" />
+
+        <View
+            android:id="@+id/space6"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"></View>>
+
+        <Button
+            android:id="@+id/add6"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/round_btn"
+            android:text="@string/plus_sign"
+            android:textColor="@color/Pure_White"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/space23"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"></View>>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/row7"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        tools:visibility="gone">
+
+        <View
+            android:id="@+id/space13"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"></View>>
+
+        <TextView
+            android:id="@+id/txt_sunday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sunday"
+            android:textColor="@color/True_Black" />
+
+        <EditText
+            android:id="@+id/from_time7"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/from"
+            android:inputType="time" />
+
+        <EditText
+            android:id="@+id/to_time7"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/to"
+            android:inputType="time" />
+
+        <Button
+            android:id="@+id/delete7"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/round_btn2"
+            android:text="@string/minus_sign"
+            android:textColor="@color/Pure_White" />
+
+        <View
+            android:id="@+id/space7"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"></View>>
+
+        <Button
+            android:id="@+id/add7"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/round_btn"
+            android:text="@string/plus_sign"
+            android:textColor="@color/Pure_White"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/space24"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"></View>>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <Switch
+            android:id="@+id/switch3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Weekdays" />
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Enable Weekends" />
+
+        <Switch
+            android:id="@+id/switch2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:text="Same Time Everyday" />
+
+        <Button
+            android:id="@+id/btn_save"
+            android:background="@drawable/custom_button"
+            android:textColor="@color/Pure_White"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/save" />
+
+        <View
+
+            android:id="@+id/space8"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"></View>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,99 @@
+<resources>
+    <string name="app_name">Clinic Services App</string>
+    <string name="button_login">\"\"</string>
+    <string name="button_cancel">\"\"</string>
+
+    <string-array name="Insurances">
+        <item></item>
+        <item>HMO (Health Maintenance Org)</item>
+        <item>PPO (Preferred Provider Org)</item>
+        <item>EPO (Exlusive Provider Org)</item>
+        <item>POS (Point of service)</item>
+        <item>Catastrophic Plan</item>
+
+    </string-array>
+
+
+    <string-array name="Payments">
+        <item></item>
+        <item>Visa</item>
+        <item>Mastercard</item>
+        <item>PayPal</item>
+        <item>Crypto</item>
+
+    </string-array>
+
+    <string-array name="SearchType">
+        <item></item>
+        <item>Address</item>
+        <item>Working Hours</item>
+        <item>Type of Service</item>
+        <item>Clinic</item>
+
+    </string-array>
+
+    <string-array name="Days">
+        <item>Select Day</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+
+    </string-array>
+
+    <string name="string2" />
+    <string name="string1" />
+    <string name="emptyStringName" />
+    <string name="emptyStringRole" />
+    <string name="wednesday">Wednesdays</string>
+    <string name="tuesday">Tuesdays</string>
+    <string name="monday">Mondays</string>
+    <string name="thursday">Thursdays</string>>
+    <string name="friday">Fridays</string>
+    <string name="saturday">Saturdays</string>>
+    <string name="sunday">Sundays</string>
+    <string name="minus_sign">-</string>
+    <string name="plus_sign">+</string>
+    <string name="back">Back</string>
+    <string name="save">Save</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="current_working_hours_are">Current working hours are:</string>
+    <string name="monday_hours">Monday hours:</string>
+    <string name="tuesday_hours">Tuesday hours:</string>
+    <string name="wednesday_hours">Wednesday hours:</string>
+    <string name="thursday_hours">Thursday hours:</string>
+    <string name="friday_hours">Friday hours:</string>
+    <string name="saturday_hours">Saturday hours:</string>
+    <string name="sunday_hours">Sunday hours:</string>
+    <string name="_00_00_00_am">00:00:00 AM</string>
+    <string name="_00_00_00_pm">00:00:00 PM</string>
+    <string name="complete_your_profile">Complete your profile:</string>
+    <string name="postal_code">Postal Code: *</string>
+    <string name="street_address">Street Address: *</string>
+    <string name="_123_example_st">123 Example St.</string>
+    <string name="apartment_suite_unit_etc_optional">Apartment, Suite, Unit, etc (Optional)</string>
+    <string name="province">Province: *</string>
+    <string name="ontario">Ontario</string>
+    <string name="town_city">Town / City: *</string>
+    <string name="ottawa">Ottawa</string>
+    <string name="k1n_6n5">K1N 6N5</string>
+    <string name="phone_number">Phone Number: *</string>
+    <string name="_1234567890">1234567890</string>
+    <string name="name_of_clinic">Name of Clinic: *</string>
+    <string name="insurance">Insurance: *</string>
+    <string name="payment_method">Payment Method: *</string>
+    <string name="complete_profile">Complete Profile</string>
+    <string name="invalid_name">Cannot leave empty</string>
+    <string name="invalid_entry">Cannot leave empty</string>
+    <string name="Date">Date</string>
+    <string name="Time">Time</string>
+    <string name="Save">Confirm</string>
+    <string name="Add">Add</string>
+    <string name="Cancel">Cancel</string>
+
+
+</resources>

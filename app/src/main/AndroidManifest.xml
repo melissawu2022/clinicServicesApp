@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.clinicservicesapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".PatientFeatures.PatientAppointment"></activity>
+        <activity android:name=".EmployeeFeatures.AllAppointments" />
+        <activity android:name=".PatientFeatures.DisplayRating" />
+        <activity android:name=".PatientFeatures.RatingClinic" />
+        <activity android:name=".PatientFeatures.ViewClinicDialog" />
+        <activity android:name=".PatientFeatures.SearchServices" />
+        <activity android:name=".EmployeeFeatures.ViewServices" />
+        <activity android:name=".EmployeeFeatures.CompleteProfile" />
+        <activity android:name=".EmployeeFeatures.AddServices" />
+        <activity android:name=".EmployeeFeatures.DisplayEmployee" />
+        <activity android:name=".AdminFeatures.AdminAccounts" />
+        <activity android:name=".AdminFeatures.AdminControlPanel" />
+        <activity android:name=".AdminFeatures.Admin" />
+        <activity android:name=".PatientFeatures.DisplayPatient" />
+        <activity android:name=".EmployeeFeatures.WorkingHour" />
+        <activity android:name=".PatientFeatures.BookAppointment" />
+        <activity android:name=".EmployeeFeatures.DisplayHours" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SignupActivity" />
+    </application>
+
+</manifest>

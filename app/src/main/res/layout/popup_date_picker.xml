@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/My_gray"
+    android:id="@+id/popup2">
+
+
+    <DatePicker
+        android:id="@+id/popup2_date_picker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="-3dp"
+        android:layout_marginEnd="-5dp"></DatePicker>
+
+    <Space
+        android:id="@+id/space_popup2_2"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <Button
+        android:id="@+id/btn_popup2_add"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/popup2_date_picker"
+        android:layout_alignBottom="@id/space_popup2_2"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="84dp"
+        android:layout_marginBottom="-493dp"
+        android:background="@drawable/custom_button"
+        android:text="@string/Add"
+        android:textAllCaps="false"
+        android:textColor="@color/Pure_White" />
+
+    <Button
+        android:id="@+id/btn_popup2_cancel"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/popup2_date_picker"
+        android:layout_alignBottom="@id/space_popup2_2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="63dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginBottom="-500dp"
+        android:background="@drawable/custom_button"
+        android:text="@string/Cancel"
+        android:textAllCaps="false"
+        android:textColor="@color/Pure_White"></Button>
+
+</RelativeLayout>

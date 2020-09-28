@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:id="@+id/makeAppointment"
+    tools:context=".PatientFeatures.BookAppointment">
+
+    <Space
+        android:id="@+id/makeAppointment_space1"
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+
+    <Button
+        android:id="@+id/btn_date"
+
+        android:layout_width="120dp"
+        android:layout_height="34dp"
+        android:layout_alignLeft="@+id/makeAppointment_space1"
+        android:layout_alignTop="@+id/makeAppointment_space1"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/custom_button"
+        android:text="@string/Date"
+        android:textAllCaps="false"
+        android:textColor="@color/Pure_White" />
+
+    <TextView
+        android:id="@+id/textView_date"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/makeAppointment_space1"
+        android:layout_alignTop="@+id/makeAppointment_space1"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="93dp"
+
+        android:layout_weight="1"
+        android:text="Date not set yet"
+        android:textAllCaps="false"
+        android:textColor="@color/My_green" />
+
+    <Button
+        android:id="@+id/btn_time"
+        android:layout_width="120dp"
+        android:layout_height="34dp"
+        android:layout_alignLeft="@+id/makeAppointment_space1"
+        android:layout_alignTop="@+id/makeAppointment_space1"
+
+        android:layout_marginLeft="234dp"
+        android:layout_marginTop="147dp"
+        android:background="@drawable/custom_button"
+        android:text="@string/Time"
+        android:textAllCaps="false"
+        android:textColor="@color/Pure_White" />
+
+    <TextView
+        android:id="@+id/textView_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/makeAppointment_space1"
+        android:layout_alignTop="@+id/makeAppointment_space1"
+        android:layout_marginLeft="242dp"
+
+        android:layout_marginTop="93dp"
+        android:layout_weight="1"
+        android:text="Time not set yet"
+        android:textColor="@color/My_green" />
+
+    <EditText
+        android:id="@+id/textView_Clinic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/makeAppointment_space1"
+        android:layout_alignTop="@id/makeAppointment_space1"
+        android:layout_marginLeft="106dp"
+        android:layout_marginTop="261dp"
+        android:hint="Clinic name goes here"
+        android:textColor="@color/My_green" />
+
+    <Button
+        android:id="@+id/btn_appointment_save"
+        android:layout_width="120dp"
+        android:layout_height="34dp"
+        android:layout_alignLeft="@+id/makeAppointment_space1"
+        android:layout_alignTop="@+id/makeAppointment_space1"
+
+        android:layout_marginLeft="137dp"
+        android:layout_marginTop="339dp"
+        android:background="@drawable/custom_button"
+        android:text="@string/Save"
+        android:textAllCaps="false"
+        android:textColor="@color/Pure_White" />
+
+
+</RelativeLayout>

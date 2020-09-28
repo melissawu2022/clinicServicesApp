@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".EmployeeFeatures.DisplayHours">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="-3dp"
+        android:text="@string/current_working_hours_are"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/monTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/monday_hours"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tuesTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/startTV1"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/tuesday_hours"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/wedTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/startTV2"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/wednesday_hours"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/thursTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/startTV3"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/thursday_hours"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/friTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/startTV4"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/friday_hours"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/satTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/startTV5"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/saturday_hours"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/sunTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/startTV6"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/sunday_hours"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/TV1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/monTV"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/startTV1"
+        android:text="@string/to"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/TV2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tuesTV"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/startTV2"
+        android:text="@string/to"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/TV3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wedTV"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/startTV3"
+        android:text="@string/to"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/TV4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/thursTV"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/startTV4"
+        android:text="@string/to"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/TV5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/friTV"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/startTV5"
+        android:text="@string/to"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/TV6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/satTV"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/startTV6"
+        android:text="@string/to"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/TV7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sunTV"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/startTV7"
+        android:text="@string/to"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/startTV1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/monTV"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/_00_00_00_am"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/startTV2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tuesTV"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/_00_00_00_am"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/startTV3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wedTV"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/_00_00_00_am"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/startTV4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/thursTV"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/_00_00_00_am"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/startTV5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/friTV"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/_00_00_00_am"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/startTV6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/satTV"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/_00_00_00_am"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/startTV7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sunTV"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/_00_00_00_am"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/endTV1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/monTV"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/TV1"
+        android:text="@string/_00_00_00_pm"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/endTV2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/endTV1"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="37dp"
+        android:layout_toEndOf="@+id/TV2"
+        android:text="@string/_00_00_00_pm"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/endTV3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/endTV2"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="37dp"
+        android:layout_toEndOf="@+id/TV3"
+        android:text="@string/_00_00_00_pm"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/endTV4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/endTV3"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="37dp"
+        android:layout_toEndOf="@+id/TV4"
+        android:text="@string/_00_00_00_pm"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/endTV5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/endTV4"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="37dp"
+        android:layout_toEndOf="@+id/TV5"
+        android:text="@string/_00_00_00_pm"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/endTV6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/endTV5"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="37dp"
+        android:layout_toEndOf="@id/TV6"
+        android:text="@string/_00_00_00_pm"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/endTV7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/endTV6"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="37dp"
+        android:layout_toEndOf="@id/TV7"
+        android:text="@string/_00_00_00_pm"
+        android:textSize="20sp"/>
+
+
+</RelativeLayout>

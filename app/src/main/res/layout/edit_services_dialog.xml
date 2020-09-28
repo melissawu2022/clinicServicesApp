@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="false"
+        android:layout_marginBottom="0dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editRole"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Role"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editService"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Service"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Rate"
+            android:inputType="phone" />
+
+        <Button
+            android:id="@+id/btnEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/custom_button"
+            android:text="Edit"
+            android:textColor="@color/Pure_White" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/custom_button"
+            android:text="Delete"
+            android:textColor="@color/Pure_White" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+    </LinearLayout>
+
+</RelativeLayout>
